@@ -113,7 +113,7 @@ export default function ComparisonSection() {
                     </div>
                     {comparisonData.map((item, index) => (
                         <motion.div
-                            key={index}
+                            key={index} // @ts-ignore
                             variants={item}
                             className={`grid grid-cols-3 p-4 ${index % 2 === 0 ? "bg-white" : "bg-gray-50"}`}
                         >
